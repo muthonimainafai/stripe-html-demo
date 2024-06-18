@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Manipulating images</title>
+        <style> 
+        
+        
+        
+            th{
+                text-align: left;
+            }
+        
+            th, td {
+                border-bottom: 1px solid #D6EE;
+                    
+            }
+            tr:nth-child(even){
+                background-color: #D6EE;
+            }
+            th:nth-child(even), td:nth-child(even){
+                border-color: #D6EE;
+
+            }
+            
+            
+               
+        </style>
+        
+    </head>
+    <body>
+        <h2> Picture element</h2>
+        <picture>
+            <source media="(min-width: 612px)" srcset="./about/myimages/island2.jpg">
+            <source media="(min-width: 612px)" srcset="./about/myimages/island2.jpg">
+  <img src="./about/myimages/island2.jpg" style="width:612;">
+        </picture>
+        <table style="width: 100%"> 
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>$300</td>
+              </tr>
+              <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td>$250</td>
+              </tr>  
+                 
+           
+        
+        </table>
+        <ul style="list-style-type: square;">
+            <li> tea</li>
+            <li> milk</li>
+            <li>fanta</li>
+        </ul>
+        <ol>
+            <li> eggs</li>
+            <li> bacon</li>
+            <li>sausage</li>
+        </ol>
+        <p> <b> description in a list</b></p>
+        <dl>
+            <dt>coffee</dt>
+            <dd> -black drink</dd>
+            <dt> milk</dt>
+            <dd> -white drink</dd>
+        </dl>
+        <ul> 
+            <li> coffee</li>
+            <li> tea</li>
+            <ul>
+                <li> black tea</li>
+                <li>green tea</li>
+            </ul>
+            <li> milk</li>
+        </ul>
+    </body>
+    
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+          
+        <title> navigation</title>
+        <style>
+            body{
+                background-color: #8d3d3d;
+                margin: 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .container {
+            display: flex;
+            
+            background-color: #8d3d3d;
+            padding: 10px;
+            
+            
+        }
+        .section {
+            color: rgb(160, 107, 107);
+            padding: 50px;
+            text-align: center;
+            flex-grow: 1;
+        } 
+        .section:hover{
+            background-color: #555;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="section"><a href="#Home">Home</a></div>
+        <div class="section"><a href="#About">About</a></div>
+        <div class="section"><a href="#Contact">Contact</a></div>
+    </div>
+    <iframe src="my_iframe.html" name="iframe_a"
+    title="example1"></iframe>
+    <h1> My First Javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> click for a date</button>
+<br>
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo">This is a demonstration.</p>
+    
+    <script>
+    function myFunction() { 
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    </script>
+   
+   
+
+</body>
+
+</html>
