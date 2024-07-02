@@ -9,15 +9,27 @@
             body{
                 justify-content: center;
                 align-items: center;
-            height: 100vh;
-                background-color: rgb(219, 104, 139);
-                padding: 60px;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(184, 222, 233);
+                padding-left: 130px;
+                padding-top: 15px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                font-family: 'Times New Roman', Times, serif;
+                
             }
             .container{
                 display: flex;
                 font-size: 60px;
                 padding: 1px;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0; 
+                background-color: rgb(184, 222, 233); 
             }
+             
+            
             .section{
                 padding: 10px;
                 
@@ -28,19 +40,38 @@
                 color: white;
                 font-size: 20px;
                 padding: 20px;
+                text-decoration: none;
+                transition: color 0.3s ease;
             }
 
             a:hover{
-                background-color: transparent;
+                color: lightgrey;
+                text-decoration: none;
+                
                 
             }
             .roundedrectangle{
-                border: 5px;
-                border-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid black;
+              border-radius: 18px;
+              background-color: black;
+              justify-content: end;
+              width: 100px;
+              height: 30px;
+              padding-bottom: 5px;
+              
+              text-align: center;
+            
+            }
+            .roundedrectangle-container{
                 display: flex;
-                background-color: grey;
-                color: white;
-                padding: 15px;
+                flex-direction: column;
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 15px;
+                
+
             }
             .rectangle{
                 border: 5px;
@@ -59,39 +90,129 @@
                 flex-direction: column;
 
             }
-            .leftside{
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                background-color: aliceblue;
-                justify-content: flex-start;
-                padding: 20px;
-                box-sizing: border-box;
-            }
-            .shish{
-                border: 5px;
-                border-radius: 15px;
-                display: inline-block;
-                background-color: black;
-                color: white;
-                cursor: pointer;
-            
-            }
-            .rightside{
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                background-color: aliceblue;
-                justify-content: flex-start;
-                padding: 20px;
-                box-sizing: border-box;
-                float: right;
-                border: 5px;
-                border-radius: 15px;
-            }
-          
-          
+            .sides {
+           display: flex;
+           width: 100%;
+           
+        }
+        .left-column, .right-column{
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box ;
+            overflow-y: auto;
+              
+        }
+        .left-column{ 
+            background-color: rgb(181, 210, 236); 
+        }
+        .right-column{
+           background-color: rgb(196, 227, 236);
+        }
+        .image-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-container img{
+            width: 48%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .hold-images{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
 
+        }
+        .pls{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+        .border-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid grey;
+            padding: 3px;
+            width: 400px;
+            background-color: lightgrey;
+            border-radius: 18px;
+        }
+    
+        .left-me{
+            background-color: lightgrey;
+            padding-left: 20px;
+            margin: 0;
+            width: 50px;
+            
+            
+        }
+        .rightme{
+            background-color: rgb(88, 63, 63);
+            border-radius: 18px;
+            width: 150px;
+            text-align: center;
+
+        }
+        .icon-text-container{
+            display: flex;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 2px;
+
+        }
+        .text{
+            font-size: 20px;
+            color: black;
+        }
+        .payments{
+            width: 150px;
+            height:15px ;
+            border: 1px solid rgb(181, 181, 219);
+            border-radius: 18px;
+            background-color: rgb(83, 83, 207);
+            text-align: center;
+            padding-bottom: 25px;
+            padding-top: 2px;
+            cursor: pointer;
+            
+            
+            
+        }
+      .payments:hover{
+        background-color: aliceblue;
+      }
+      .content{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+      .billing{
+        font-size: 20px;
+      }
+      .sign{
+        font-size: 20px;
+        padding-top: 25px;
+        background-color: rgb(46, 38, 38);
+        color: white;
+        width:100px ;
+        height: 12px;
+        border-radius: 18px;
+        text-align: center;
+        padding-bottom: 35px;
+        margin: 20px;
+        cursor: pointer;
+      }
+      .sign:hover{
+        background-color: darkgrey;
+      }
+   
+       
+
+      
+                
         </style>
     </head>
     <body>
@@ -104,7 +225,7 @@
             <div class="section"><a href="#Resources">Resources</a></div>
             <div class="section"><a href="#Pricing">Pricing</a></div>
             <div class="section"><a href="#Contact Sales">Contact Sales</a></div>
-            <div class="roundedrectangle"> <a href="Sign in >">Sign in </a></div>
+            <div class="sign"><span style="display: block;">Sign In</span></div>
             </div>
             
    
@@ -112,25 +233,93 @@
         <p style="font-size: small;">Sessions 2024 • Watch on Demand </p>
     </div>
     </div>
-    <div class="leftside">
+    <div class="sides">
+        <div class="left-column">
         <h2 style="font-size: 80px;">
         Financial infastructure to grow your revenue
     </h2>
     <p style="font-size: 40px;"> Join the millions of companies of all sizes that use Stripe to accept payments online and in person,embed financial services, power custom revenue models, and build a more profitable business.</p>
-    <div class="roundedrectangle">
-    <p> Start now</p> 
-    <p>Contact Sales</p>
+    
+
+    <div class="border-container">
+        <div class="left-me">
+            <p>Email address</p>
+        </div>
+        <div class="rightme">
+            <p>Start Now</p>
+        </div>
     </div>
     </div>
-    <div class="rightside">
-        <img src="/learnhtml2/about/myimages/stripepayment.png">
+    
+    <div class="right-column">
+        <div class="image-container">
+        <img src="/learnhtml2/about/myimages/stripepayment1.png">
+        <img src="/learnhtml2/about/myimages/stripepayment1.png">
+    </div>
+    </div>
+    </div>
+    <div class="hold-images">
+        <div class="pls">
+        <img src="/learnhtml2/about/myimages/amazon.png">
+        <img src="/learnhtml2/about/myimages/BMW.png">
+        <img src="/learnhtml2/about/myimages/google.png">
+        <img src="/learnhtml2/about/myimages/salesforce.png">
+        </div>
+        <div class="pls">
+        <img src="/learnhtml2/about/myimages/whatsapp.png">
+        <img src="/learnhtml2/about/myimages/icons8-shopify-48.png">
+       <img src="/learnhtml2/about/myimages/instagram.png">
+        <img src="/learnhtml2/about/myimages/marine.png">
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <hr>
+    <div class="sides">
+        <div class="left-column">
+            <h2 style="font-size: 20px; color: blue;"> Modular Solutions </h2>
+            <h3 style="font-size: 35px; color: black;">A fully intergrated suite of financial and payment product</h3>
+            <p style="font-size: 20px;"> Reduce costs, grow revenue, and run your business moe efficiently on a fully ntergrated platform. Use Stripe to handle all your payments-related needs, manage revenue operations, and launch(orinvent) new business models</p>
+            <div>
+                <div class="icon-text-container">
+                <img src="/learnhtml2/about/myimages/payment.png" alt="pay icon">
+                <span class="text">Payments</span>
+                </div>
+                <div class="content">
+                    <span style="display: block;">Accept and optimize payments, globally</span>
+                    <span style="display: block;">  Increase authorization rates, optimize your checkout conversion, and offer local payment methods in every market.</span>
+                </div>
+                <br><br>
+                <div class="payments">
+                    <span style="display: block; padding-top: 9px;"> Start with payments</span>
+
+                </div>
+                <br>
+                <p style="font-size: 25px;">See also</p>
+                <p> <span style="color: blue;">Tax</span> for automating sales tax and VAT </p>
+                <p><span style="color: blue;">Radar</span> for fraud prevention and management</p>
+                <p><span style="color: blue;">Terminal</span> for custom in-person payments</p>
+                </div>
+                <br><br><br><br><br>
+                <div class="icon-text-container">
+                    <img src="/learnhtml2/about/myimages/billing2.png" alt="bill image">
+                    <span class="text">Billing</span>
+                </div>
+                <div class="billing">
+                <span style="display: block;">Capture recurring revenue</span>
+                <span style="display: block;">Support recurring business models, minimize churn, and automate finance operations</span>
+                </div><br><br>
+                <div class="payments">
+                    <span style="display: block;padding-top: 9px;">Start with Billing</span>
+
+                </div>
+            </div>
+        </div>
     </div>
     
 
-    </div>
     
-    
-        
     </body>
     
 </html>
